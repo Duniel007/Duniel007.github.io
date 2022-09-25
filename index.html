@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Duniel007</title>
+</head>
+<body>
+
+    <video src="vid/video.mp4" class="background" muted autoplay loop></video>
+    <div class="filter"></div>
+
+    <header>
+        <a href="" class="logo ">Duniel007</a>
+
+        <ul>
+
+            <li><a href="/">Home</a></li>
+
+            <li><a href="">Contact</a></li>
+
+
+
+        </ul>
+
+    </header>
+
+    <section>
+        <h2>Duniel007</h2>
+        <p>showcase website</p>
+
+    </section>
+
+    <div class="bruh">
+        <h3>Time until birthday</h3>
+    </div>
+    
+
+    <footer>
+        
+
+        <div class="launch-time">
+
+            
+
+            <div>
+                <p id="day">00</p>
+                <span>Days</span>
+            </div>
+            <div>
+                <p id="hour">00</p>
+                <span>Hours</span>
+            </div>
+            <div>
+                <p id="minute">00</p>
+                <span>Minutes</span>
+            </div>
+            
+            <div>
+                <p id="second">00</p>
+                <span>Seconds</span>
+            </div>
+
+
+    </footer>
+
+
+    <script>var countDownDate = new Date("Oct 28, 2022 00:00:00").getTime();
+        var x = setInterval(function(){
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+    
+            var day = Math.floor(distance / (1000*60*60*24));
+            var hour = Math.floor((distance  % (1000*60*60*24)) / (1000*60*60));
+            var minute = Math.floor((distance % (1000*60*60)) / (1000*60));
+            var second = Math.floor((distance % (1000*60)) / 1000)
+    
+            document.getElementById("day").innerHTML = day;
+            document.getElementById("hour").innerHTML = hour;
+            document.getElementById("minute").innerHTML = minute;
+            document.getElementById("second").innerHTML = second;
+    
+        }, 1000)</script>
+</body>
+</html>
