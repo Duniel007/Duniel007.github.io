@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    font-family: Poppins;
+    background: #181818;
+}
+
+.logo{
+    position: absolute;
+    font-size: 30px;
+    margin: 40px;
+    display: flex;
+    z-index: 1000;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+
+
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.filter {
+    background: #181818;
+    height: 100%;
+    width: 100%;
+    opacity: 0.85;
+}
+
+.zaczynamy{
+    position: absolute;
+    z-index: 1000;
+    text-transform: uppercase;
+    margin: 300px 70px;
+    font-size: 75px;
+}
+
+.launch-time{
+    display: flex;
+    margin-left: 20px;
+}
+
+.launch-time div{
+    flex-basis: 100px;
+}
+
+.launch-time div p {
+    font-size: 40px;
+}
+.launch-time div span{
+    font-size: 15px;
+
+}
+
+@media only screen and (max-width: 800px) {
+    
+  }
